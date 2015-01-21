@@ -36,12 +36,12 @@ describe('Service: fizzbuzzer', function () {
     expect(fizzbuzzer(15)).toBe('fizzybuzzy');
   });
 
-  xit('should return fizzybuzzy first even though all three conditions are true', function() {
+  it('should return fizzybuzzy first even though all three conditions are true', function() {
     expect(fizzbuzzer(45)).toBe('fizzybuzzy');
   });
 
   it('should return false if passed something other than a Number', function() {
-    expect(fizzbuzzer('wharglbargl')).toBe(false);
+    expect(fizzbuzzer('wharglbargl')).toBeFalsy();
   });
 
 
